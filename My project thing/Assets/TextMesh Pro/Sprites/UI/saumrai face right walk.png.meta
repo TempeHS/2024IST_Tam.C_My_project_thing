@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 51797bbba7e7eb94bbbaf070139e8455
+guid: f476b1587e2310142a125ce77dbbdd75
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -94,19 +94,6 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Windows Store Apps
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
     buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -123,7 +110,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: saumrai face right_0
+      name: saumrai face right walk_0
       rect:
         serializedVersion: 2
         x: 0
@@ -137,14 +124,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5399854e521db9945bf391f2fdc196ab
-      internalID: -665100126
+      spriteID: 3f4bdc98ebd9cb04a912345ffac5cd07
+      internalID: -1538102228
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saumrai face right_1
+      name: saumrai face right walk_1
       rect:
         serializedVersion: 2
         x: 64
@@ -158,14 +145,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a08c1e71efe29524b93bdb75a6080eed
-      internalID: 1577683713
+      spriteID: bab7f62433243db4b8c32538cf7c0c0f
+      internalID: 1994917063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saumrai face right_2
+      name: saumrai face right walk_2
       rect:
         serializedVersion: 2
         x: 128
@@ -179,14 +166,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96d37fb8d6a466e47b91c4529f2392d5
-      internalID: -1556059302
+      spriteID: bdf339a057c02014a92f190394bd1042
+      internalID: 435526481
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saumrai face right_3
+      name: saumrai face right walk_3
       rect:
         serializedVersion: 2
         x: 0
@@ -200,14 +187,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 353a9d8ce3b5eeb4a9648b3630c997cc
-      internalID: -1901896544
+      spriteID: 2026b3bd72a58d84f8b69e894f2ea2cf
+      internalID: -1632153878
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saumrai face right_4
+      name: saumrai face right walk_4
       rect:
         serializedVersion: 2
         x: 64
@@ -221,14 +208,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ced5f7fc12ac2b240aa250b0564da931
-      internalID: -945984864
+      spriteID: 7f06da0e81e7e4e4fabe17c43225a22e
+      internalID: -531781157
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saumrai face right_5
+      name: saumrai face right walk_5
       rect:
         serializedVersion: 2
         x: 128
@@ -242,14 +229,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 12e110efb1445a6419dddc84b6685547
-      internalID: 876807048
+      spriteID: d4e32c4346ac7a8478ab224c8e300268
+      internalID: -1526395586
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saumrai face right_6
+      name: saumrai face right walk_6
       rect:
         serializedVersion: 2
         x: 0
@@ -263,14 +250,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: edc272c344e2cb34896d36b4a2296734
-      internalID: 875954864
+      spriteID: 55ba96a357a3d384294ca5f2eca273e7
+      internalID: -92092480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: saumrai face right_7
+      name: saumrai face right walk_7
       rect:
         serializedVersion: 2
         x: 64
@@ -284,8 +271,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f0fe300b4b186846a75445f63961743
-      internalID: 2019212343
+      spriteID: 7bef833cced91ef41ac46c54f10c2cb5
+      internalID: -40065523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saumrai face right walk_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2088f8caad4f5cd4ca99919669f890c9
+      internalID: 594610154
       vertices: []
       indices: 
       edges: []
@@ -301,14 +309,15 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      saumrai face right_0: -665100126
-      saumrai face right_1: 1577683713
-      saumrai face right_2: -1556059302
-      saumrai face right_3: -1901896544
-      saumrai face right_4: -945984864
-      saumrai face right_5: 876807048
-      saumrai face right_6: 875954864
-      saumrai face right_7: 2019212343
+      saumrai face right walk_0: -1538102228
+      saumrai face right walk_1: 1994917063
+      saumrai face right walk_2: 435526481
+      saumrai face right walk_3: -1632153878
+      saumrai face right walk_4: -531781157
+      saumrai face right walk_5: -1526395586
+      saumrai face right walk_6: -92092480
+      saumrai face right walk_7: -40065523
+      saumrai face right walk_8: 594610154
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
