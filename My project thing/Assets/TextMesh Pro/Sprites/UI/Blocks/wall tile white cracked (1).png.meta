@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 873b6cd03f06131478ab12d78c7f55aa
+guid: 7a00f556cdc93e14ca71f12acf61b38c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -110,7 +110,28 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wall tile white mossy_0
+      name: wall tile white cracked (1)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7acb85386ac729b4082112ee008ed085
+      internalID: 870231781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: wall tile white cracked (1)_1
       rect:
         serializedVersion: 2
         x: 0
@@ -124,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 65ef88413746f8b49ae3854e2e42182d
-      internalID: 1285813762
+      spriteID: 424f01b26a5486f4398a558474131fee
+      internalID: -1537449662
       vertices: []
       indices: 
       edges: []
@@ -134,14 +155,15 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wall tile white mossy_0: 1285813762
+      wall tile white cracked (1)_0: 870231781
+      wall tile white cracked (1)_1: -1537449662
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
