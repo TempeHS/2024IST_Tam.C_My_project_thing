@@ -17015,7 +17015,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bda98eebe4af0c46961815024246ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 25
   jumpingPower: 30
   animator: {fileID: 1377191487}
   rb: {fileID: 1377191484}
@@ -17156,8 +17156,8 @@ Transform:
   m_GameObject: {fileID: 1377191481}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -21.4333, y: 2.4237, z: 0}
-  m_LocalScale: {x: 7.5147395, y: 3.58981, z: 1}
+  m_LocalPosition: {x: -21.4333, y: 2.6555, z: 0}
+  m_LocalScale: {x: 7.5147395, y: 4.3138742, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 585599529}
