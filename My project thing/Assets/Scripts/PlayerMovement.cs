@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     private float horizontal;
     public float speed = 8f;
-    private float jumpingPower = 16f;
+    public float jumpingPower = 16f;
     private bool isFacingRight = true;
 
     public Animator animator;
@@ -19,19 +19,21 @@ public class PlayerMovement : MonoBehaviour
     {
         horizontal = Input.GetAxisRaw("Horizontal");
 
-        animator.SetFloat("Speed", Mathf.Abs(horizontal));
-
         if (Input.GetButtonDown("Jump") && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jumpingPower);
         }
 
-        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0.5f)
+        if (Input.GetButtonUp("Jump") && rb.velocity.y > 0f)
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
         Flip();
+
+        animator.SetFloat("Speed", Mathf.Abs(horizontal));
+
+        animator.SetBool("IsJumping", !IsGrounded());
     }
 
     private void FixedUpdate()

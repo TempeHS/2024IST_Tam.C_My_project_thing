@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 629785aee7a39944c8f04e9d86c263a6
+guid: 3f68a55487f0f7946a058bb4ba3fb3b7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 15
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -94,7 +94,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Server
+    buildTarget: Windows Store Apps
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -107,7 +107,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
-    buildTarget: Windows Store Apps
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -123,13 +123,76 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: wall tile white cracked (2)_0
+      name: saumrai face riight jump_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152eaa3c9696024428841510f87eeb8b
+      internalID: 409758497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saumrai face riight jump_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 754bf26aaf373524880e1fabd9d4ce82
+      internalID: 1755738316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saumrai face riight jump_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe7606a4d308f084f92fc1d2eea40592
+      internalID: 1690305451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saumrai face riight jump_3
       rect:
         serializedVersion: 2
         x: 0
         y: 64
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +200,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 52823f594797b1149871ac6fed7758e7
-      internalID: -721043482
+      spriteID: 889ff91350b5c0f43a11aaa6c4737c69
+      internalID: 14550126
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall tile white cracked (2)_1
+      name: saumrai face riight jump_4
       rect:
         serializedVersion: 2
-        x: 32
+        x: 64
         y: 64
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -158,20 +221,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 30de5204ed8a81247afca98bb3a0887c
-      internalID: 2018979873
+      spriteID: b9d4e8c8efd080f40979dc195c6d4dbc
+      internalID: 1556141660
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall tile white cracked (2)_2
+      name: saumrai face riight jump_5
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
-        width: 32
-        height: 32
+        x: 128
+        y: 64
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -179,41 +242,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3b7a0e784f648054a88f215461a70ddb
-      internalID: 1432235327
+      spriteID: 58e51dde9b8f1224bad3775b84f51bdb
+      internalID: -1796095137
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: wall tile white cracked (2)_3
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 32
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ad28e793a37317e48abd80fe1ed762f6
-      internalID: -617333823
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: wall tile white cracked (2)_4
+      name: saumrai face riight jump_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 32
-        height: 32
+        width: 64
+        height: 64
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -221,8 +263,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 09a111a69f0efa149bb2952e40a0ff06
-      internalID: 717977784
+      spriteID: 7a7cf3a31c049894ebd0d36bf67abc04
+      internalID: 815673267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: saumrai face riight jump_7
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86fbaf9bdb0e9a54ea984b7486e017e0
+      internalID: 1284718395
       vertices: []
       indices: 
       edges: []
@@ -238,11 +301,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      wall tile white cracked (2)_0: -721043482
-      wall tile white cracked (2)_1: 2018979873
-      wall tile white cracked (2)_2: 1432235327
-      wall tile white cracked (2)_3: -617333823
-      wall tile white cracked (2)_4: 717977784
+      saumrai face riight jump_0: 409758497
+      saumrai face riight jump_1: 1755738316
+      saumrai face riight jump_2: 1690305451
+      saumrai face riight jump_3: 14550126
+      saumrai face riight jump_4: 1556141660
+      saumrai face riight jump_5: -1796095137
+      saumrai face riight jump_6: 815673267
+      saumrai face riight jump_7: 1284718395
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
