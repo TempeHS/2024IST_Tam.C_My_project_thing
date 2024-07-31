@@ -32,6 +32,8 @@ public class PlayerMovement : MonoBehaviour
         Flip();
 
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
+
+        animator.SetBool("IsJumping", !IsGrounded());
     }
 
     private void FixedUpdate()
