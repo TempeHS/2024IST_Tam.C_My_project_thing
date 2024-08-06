@@ -8,12 +8,18 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 8f;
     public float jumpingPower = 16f;
     private bool isFacingRight = true;
+    private bool canDash = true;
+    private bool isDashing;
+    private float dashingPower = 54f;
+    private float dashingTime = 0.2f;
+    private float dashingCooldown = 1f;
 
     public Animator animator;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+    [SerializeField] private TrailRenderer tr;
 
     void Update()
     {
@@ -34,10 +40,26 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
 
         animator.SetBool("IsJumping", !IsGrounded());
+
+        if (isDashing)
+        {
+            return;
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
     }
 
     private void FixedUpdate()
     {
+        rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+        if (isDashing)
+        {
+            return;
+        }
+
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
     }
 
@@ -55,5 +77,21 @@ public class PlayerMovement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
     }
 }
