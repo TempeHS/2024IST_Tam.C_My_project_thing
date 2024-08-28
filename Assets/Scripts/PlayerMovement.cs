@@ -25,6 +25,11 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+        if (isDashing)
+        {
+            return;
+        }
+
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
@@ -37,6 +42,11 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
+        if (GetButtonDown(Keycode.LeftArrow) &&  canDash)
+        {
+            StartCoroutine(Dash());
+        }
+
         Flip();
 
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
@@ -47,10 +57,14 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void FixedUpdate()
+
+     if (isDashing)
+        {
+            return;
+        }
+
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
-      
-
     }
 
     private bool IsGrounded()
