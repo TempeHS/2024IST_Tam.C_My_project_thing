@@ -11,10 +11,10 @@ public class PlayerMovement : MonoBehaviour
     
     private bool canDash = true;
     private bool isDashing;
-    private float dashingPower = 24f;
-    private float dashingTime = 0.2f;
-    private float dashingCooldown = 0.5f;
-
+    private float dashingPower = 15f;
+    private float dashingTime = 0.01f;
+    private float dashingCooldown = 0.01f;
+     
     public Animator animator;
 
     [SerializeField] private Rigidbody2D rb;
@@ -25,6 +25,8 @@ public class PlayerMovement : MonoBehaviour
 
     void Update()
     {
+
+    
         if (isDashing)
         {
             return;
@@ -42,10 +44,12 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
-        if (GetButtonDown(Keycode.LeftArrow) &&  canDash)
+        if (Input.GetKeyDown(KeyCode.LeftArrow) &&  canDash)
         {
             StartCoroutine(Dash());
         }
+
+        
 
         Flip();
 
@@ -57,15 +61,17 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void FixedUpdate()
-
-     if (isDashing)
+    {
+        if (isDashing)
         {
             return;
         }
-
-    {
+        
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+    
     }
+
+   
 
     private bool IsGrounded()
     {
@@ -83,7 +89,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-    IEnumerator Dash()
+    private IEnumerator Dash()
     {
         canDash = false;
         isDashing = true;

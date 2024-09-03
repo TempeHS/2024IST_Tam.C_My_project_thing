@@ -198,8 +198,8 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 51.903656, y: -9.349723}
-      - {x: 51.936405, y: 4.1900625}
+    - - {x: 46.6, y: -9.349723}
+      - {x: 46.6, y: 4.1900625}
       - {x: 9.5799675, y: 4.16786}
       - {x: 9.573382, y: -9.416087}
   m_UseDelaunayMesh: 0
@@ -16637,7 +16637,7 @@ MonoBehaviour:
   m_Follow: {fileID: 1377191486}
   m_Lens:
     FieldOfView: 60
-    OrthographicSize: 10.9
+    OrthographicSize: 10.18
     NearClipPlane: 0.3
     FarClipPlane: 1000
     Dutch: 0
@@ -16663,7 +16663,7 @@ Transform:
   m_GameObject: {fileID: 915477261}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -51.62576, y: 3.7663326, z: -9.861365}
+  m_LocalPosition: {x: -62.48431, y: 3.4225338, z: -9.861365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17025,7 +17025,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
-  tr: {fileID: 0}
+  tr: {fileID: 1377191488}
 --- !u!61 &1377191483
 BoxCollider2D:
   m_ObjectHideFlags: 0
