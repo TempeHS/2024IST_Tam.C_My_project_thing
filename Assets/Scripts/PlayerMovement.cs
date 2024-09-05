@@ -11,10 +11,10 @@ public class PlayerMovement : MonoBehaviour
     
     private bool canDash = true;
     private bool isDashing;
-    private float dashingPower = 15f;
-    private float dashingTime = 0.01f;
+    private float dashingPower = 24f;
+    public float dashingTime = 0.5f;
     private float dashingCooldown = 0.01f;
-     
+    private Vector2 dashingDir;
     public Animator animator;
 
     [SerializeField] private Rigidbody2D rb;
@@ -44,10 +44,11 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftArrow) &&  canDash)
+        if (Input.GetKeyDown(KeyCode.RightShift) &&  canDash)
         {
             StartCoroutine(Dash());
         }
+        
 
         
 
@@ -97,7 +98,7 @@ public class PlayerMovement : MonoBehaviour
         rb.gravityScale = 0f;
         rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         tr.emitting= true;
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
         rb.gravityScale = originalGravity;
         isDashing = false;
