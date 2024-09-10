@@ -16338,7 +16338,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.406612, y: 6.4665813, z: -10}
+  m_LocalPosition: {x: -11.567716, y: 6.4692593, z: -10}
   m_LocalScale: {x: 3.0375, y: 1.975, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -16998,6 +16998,8 @@ GameObject:
   - component: {fileID: 1377191482}
   - component: {fileID: 1377191487}
   - component: {fileID: 1377191488}
+  - component: {fileID: 1377191489}
+  - component: {fileID: 1377191490}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -17018,13 +17020,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 20
-  jumpingPower: 16
+  jumpingPower: 22.6
   animator: {fileID: 1377191487}
   rb: {fileID: 1377191484}
   groundCheck: {fileID: 585599529}
   groundLayer:
     serializedVersion: 2
     m_Bits: 64
+  tr: {fileID: 1377191488}
 --- !u!61 &1377191483
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -17299,6 +17302,44 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1377191489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377191481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 70c06cdbbfcb5b5408c38636f14417c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 5
+--- !u!114 &1377191490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377191481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bece8bf8c5c5ca44a90e4a7d59205f5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 0
+  onGround: 0
+  onWall: 0
+  onRightWall: 0
+  onLeftWall: 0
+  wallSide: 0
+  collisionRadius: 0.25
+  bottomOffset: {x: 0, y: 0}
+  rightOffset: {x: 0, y: 0}
+  leftOffset: {x: 0, y: 0}
 --- !u!1 &1624973561
 GameObject:
   m_ObjectHideFlags: 0
@@ -17449,7 +17490,7 @@ Transform:
   m_GameObject: {fileID: 1743530510}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 22.832222, y: -1.4766674, z: -9.861365}
+  m_LocalPosition: {x: 22.661926, y: -1.4766674, z: -9.861365}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
