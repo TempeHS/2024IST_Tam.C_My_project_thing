@@ -51,5 +51,5 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "2024IST_Tam.C_.sln"
+    "dotnet.defaultSolution": "2024IST_Tam.C_My_project_thing.sln"
 }
