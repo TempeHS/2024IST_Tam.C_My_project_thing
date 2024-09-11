@@ -8,12 +8,19 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 8f;
     public float jumpingPower = 16f;
     private bool isFacingRight = true;
+    
+    private bool canDash = true;
+    private bool isDashing;
+    private float dashingPower = 24f;
+    private float dashingTime = 0.2f;
+    private float dashingCooldown = 0.5f;
 
     public Animator animator;
 
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
+   
 
     void Update()
     {
@@ -34,11 +41,15 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Speed", Mathf.Abs(horizontal));
 
         animator.SetBool("IsJumping", !IsGrounded());
+
+    
     }
 
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(horizontal * speed, rb.velocity.y);
+      
+
     }
 
     private bool IsGrounded()
@@ -56,4 +67,6 @@ public class PlayerMovement : MonoBehaviour
             transform.localScale = localScale;
         }
     }
+
+   
 }
