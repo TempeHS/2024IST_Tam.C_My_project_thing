@@ -11,9 +11,9 @@ public class PlayerMovement : MonoBehaviour
     
     private bool canDash = true;
     private bool isDashing;
-    private float dashingPower = 24f;
-    private float dashingTime = 0.2f;
-    private float dashingCooldown = 0.5f;
+    public float dashingPower = 24f;
+    public float dashingTime = 2f;
+    private float dashingCooldown = 0.05f;
 
     public Animator animator;
 
@@ -23,7 +23,12 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private TrailRenderer tr;
 
     void Update()
-    {
+    {   
+        if (isDashing)
+        {
+            return;
+        }
+        
         horizontal = Input.GetAxisRaw("Horizontal");
 
         if (Input.GetButtonDown("Jump") && IsGrounded())
@@ -35,6 +40,12 @@ public class PlayerMovement : MonoBehaviour
         {
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
+
+         if (Input.GetKeyDown(KeyCode.RightShift) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
+
 
         Flip();
 
@@ -66,6 +77,22 @@ public class PlayerMovement : MonoBehaviour
             localScale.x *= -1f;
             transform.localScale = localScale;
         }
+    }
+
+     private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+        float originalGravity = rb.gravityScale;
+        rb.gravityScale = 0f;
+        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        tr.emitting = true;
+        yield return new WaitForSeconds(dashingTime);
+        tr.emitting = false;
+        rb.gravityScale = originalGravity;
+        isDashing = false;
+        yield return new WaitForSeconds(dashingCooldown);
+        canDash = true;
     }
 
    
