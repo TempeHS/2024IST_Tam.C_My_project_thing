@@ -11,8 +11,8 @@ public class PlayerMovement : MonoBehaviour
     
     private bool canDash = true;
     private bool isDashing;
-    public float dashingPower = 24f;
-    public float dashingTime = 2f;
+    private float dashingPower = 1000f;
+    private float dashingTime = 0.2f;
     private float dashingCooldown = 0.05f;
 
     public Animator animator;
@@ -79,7 +79,7 @@ public class PlayerMovement : MonoBehaviour
         }
     }
 
-     private IEnumerator Dash()
+    private IEnumerator Dash()
     {
         canDash = false;
         isDashing = true;

@@ -16998,6 +16998,7 @@ GameObject:
   - component: {fileID: 1377191482}
   - component: {fileID: 1377191487}
   - component: {fileID: 1377191488}
+  - component: {fileID: 1377191489}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -17017,10 +17018,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5bda98eebe4af0c46961815024246ab7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 20
-  jumpingPower: 16
-  dashingPower: 73.5
-  dashingTime: 0.05
+  speed: 30
+  jumpingPower: 20
+  dashingTime: 0.3
   animator: {fileID: 1377191487}
   rb: {fileID: 1377191484}
   groundCheck: {fileID: 585599529}
@@ -17302,6 +17302,20 @@ TrailRenderer:
   m_Autodestruct: 0
   m_Emitting: 0
   m_ApplyActiveColorSpace: 1
+--- !u!114 &1377191489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1377191481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ae4dc427076f6ca42a890148fd1ae1cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fallMultiplier: 2.5
+  lowJumpMultiplier: 2
 --- !u!1 &1624973561
 GameObject:
   m_ObjectHideFlags: 0
