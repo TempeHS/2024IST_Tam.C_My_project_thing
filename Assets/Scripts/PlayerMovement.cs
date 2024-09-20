@@ -12,8 +12,8 @@ public class PlayerMovement : MonoBehaviour
     private bool canDash = true;
     private bool isDashing;
     private float dashingPower = 1000f;
-    private float dashingTime = 0.2f;
-    private float dashingCooldown = 0.05f;
+    private float dashingTime = 0.15f;
+    private float dashingCooldown = 0.03f;
 
     public Animator animator;
 
@@ -85,7 +85,7 @@ public class PlayerMovement : MonoBehaviour
         isDashing = true;
         float originalGravity = rb.gravityScale;
         rb.gravityScale = 0f;
-        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+        rb.velocity = new Vector2(transform.localScale.x * dashingPower, 5f);
         tr.emitting = true;
         yield return new WaitForSeconds(dashingTime);
         tr.emitting = false;
