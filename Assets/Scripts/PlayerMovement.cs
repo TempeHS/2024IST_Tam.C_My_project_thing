@@ -17,10 +17,20 @@ public class PlayerMovement : MonoBehaviour
 
     public Animator animator;
 
+    private Vector3 respawnPoint;
+    public GameObject fallDetector;
+
+
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private TrailRenderer tr;
+    
+    // Start is called before the first frame update
+    void Start()
+    {
+        respawnPoint = transform.position;
+    }
 
     void Update()
     {   
@@ -53,7 +63,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetBool("IsJumping", !IsGrounded());
 
-    
+        fallDetector.transform.position = new Vector2(transform.position.x, fallDetector.transform.position.y);
     }
 
     private void FixedUpdate()
@@ -95,5 +105,13 @@ public class PlayerMovement : MonoBehaviour
         canDash = true;
     }
 
+     private void OnTriggerEnter2D(Collider2D collision)
+    {
+
+        if(collision.tag == "FallDetector")
+        {
+            transform.position = respawnPoint;
+        }
+    }
    
 }
