@@ -1,6 +1,6 @@
 # 2024IST_Tam.C_
 <h1 align="center">
- <img src="https://user-images.githubusercontent.com/45159366/97361059-45151700-185c-11eb-9d12-dae51c79eb8a.png">
+ <img src="https://github.com/user-attachments/assets/6d18c199-6f6b-4a25-a21f-eb882375c66b">
   <br />
  2024IST_Tam.C_
 </h1>
