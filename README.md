@@ -1,6 +1,7 @@
 # 2024IST_Tam.C_
 <h1 align="center">
- <img src="https://user-images.githubusercontent.com/45159366/97361059-45151700-185c-11eb-9d12-dae51c79eb8a.png">
+ <img src="![Sword](https://github.com/user-attachments/assets/2720a10b-a4e8-41d9-b2bc-ec3846fa4da8)
+">
   <br />
  2024IST_Tam.C_
 </h1>
