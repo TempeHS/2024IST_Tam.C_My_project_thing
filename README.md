@@ -23,7 +23,8 @@ yadayada
 
 # Tutorials
 
-![The control scheme of my game for an xbox controller]("https://github.com/Swebwite/My%20project/Assets/Sprites/Control%20Scheme.png")
+![The control scheme of my game on keyboard]
+("https://github.com/Swebwite/My%20project/Assets/Sprites/Control%20Scheme.png")
 
 # Documentation
 
