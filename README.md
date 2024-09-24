@@ -23,7 +23,7 @@ yadayada
 
 # Tutorials
 
-![The control scheme of my game on keyboard]
+Controls on Keyboard
 ("https://github.com/Swebwite/My%20project/Assets/Sprites/Control%20Scheme.png")
 
 # Documentation
