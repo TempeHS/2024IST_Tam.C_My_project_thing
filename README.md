@@ -18,13 +18,13 @@
 yadayada
 
 # Walkthrough
-
-[video link]
+https://github.com/user-attachments/assets/4e34e370-2011-42d4-beb2-c8001f5522d8
 
 # Tutorials
 
 Controls on Keyboard
-("https://github.com/Swebwite/My%20project/Assets/Sprites/Control%20Scheme.png")
+![Keyboard](https://github.com/user-attachments/assets/d797946c-26d2-4c1f-a824-968dbb9b1aed)
+
 
 # Documentation
 
