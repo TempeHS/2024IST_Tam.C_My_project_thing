@@ -1,14 +1,14 @@
 # 2024IST_Tam.C_
 <h1 align="center">
- <img src="https://user-images.githubusercontent.com/45159366/97361059-45151700-185c-11eb-9d12-dae51c79eb8a.png">
+ <img src="https://github.com/user-attachments/assets/6d18c199-6f6b-4a25-a21f-eb882375c66b">
   <br />
  2024IST_Tam.C_
 </h1>
 
 # Table of Contents
 
-1. [Overview](https://github.com/TempeHS/2024IST_Tam.C ?tab=readme-ov-file#overview)
-2. [Walkthrough](https://github.com/TempeHS/2024IST Tam.C_?tab=readme-ov-file#walkthrough)
+1. [Overview](https://github.com/TempeHS/2024IST_Tam.C_?tab=readme-ov-file#Overview)
+2. [Walkthrough](https://github.com/TempeHS/2024IST_Tam.C_?tab=readme-ov-file#Walkthrough)
 3. [Tutorials](https://github.com/TempeHS/2024IST_Tam.C_?tab=readme-ov-file#tutorials)
 4. [Documentation](https://github.com/TempeHS/2024IST_Tam.C_?tab=readme-ov-file#documentation)
 5. [Collaboration](https://github.com/TempeHS/2024IST_Tam.C_?tab=readme-ov-file#collaboration)
@@ -18,12 +18,13 @@
 yadayada
 
 # Walkthrough
-
-[video link]
+https://github.com/user-attachments/assets/4e34e370-2011-42d4-beb2-c8001f5522d8
 
 # Tutorials
 
-![The control scheme of my game for an xbox controller]("https://github.com/Swebwite/My%20project/Assets/Sprites/Control%20Scheme.png")
+Controls on Keyboard
+![Keyboard](https://github.com/user-attachments/assets/d797946c-26d2-4c1f-a824-968dbb9b1aed)
+
 
 # Documentation
 
