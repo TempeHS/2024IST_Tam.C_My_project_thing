@@ -15,7 +15,7 @@
 
 # Overview
 
-yadayada
+The main objective of my
 
 # Walkthrough 
 https://github.com/user-attachments/assets/4e34e370-2011-42d4-beb2-c8001f5522d8
