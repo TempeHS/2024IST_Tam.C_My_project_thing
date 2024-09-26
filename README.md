@@ -28,9 +28,9 @@ Controls on Keyboard
 ![Keyboard](https://github.com/user-attachments/assets/d797946c-26d2-4c1f-a824-968dbb9b1aed)
 
 
-# Documentation
+# Player Documentation
 
-A little explination on how I made the game and the skills I aquired.
+
 
 # Collaboration
 
