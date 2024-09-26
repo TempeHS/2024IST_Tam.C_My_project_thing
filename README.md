@@ -10,7 +10,7 @@
 1. [Overview](https://github.com/TempeHS/2024IST_Tam.C_?tab=readme-ov-file#Overview)
 2. [Walkthrough](https://github.com/TempeHS/2024IST_Tam.C_?tab=readme-ov-file#Walkthrough)
 3. [Tutorials](https://github.com/TempeHS/2024IST_Tam.C_?tab=readme-ov-file#tutorials)
-4. [Documentation](https://github.com/TempeHS/2024IST_Tam.C_?tab=readme-ov-file#documentation)
+4. [Player Documentation](https://github.com/TempeHS/2024IST_Tam.C_?tab=readme-ov-file#player-documentation)
 5. [Collaboration](https://github.com/TempeHS/2024IST_Tam.C_?tab=readme-ov-file#collaboration)
 
 # Overview
