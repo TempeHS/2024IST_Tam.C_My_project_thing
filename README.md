@@ -15,7 +15,9 @@
 
 # Overview
 
-The main objective of my
+My game is mostly set in a dungeon, you play as a samurai that attempts at exploring the dungeon. The game includes platforming levels and levels with various enemies that will challenge the player. The main goal is for the player to make it to the end of the dungeon and defeat the final boss.
+<img width="960" alt="Screenshot 2024-09-26 180931" src="https://github.com/user-attachments/assets/66302430-6fc5-4b98-ba8b-89e8d04cc830">
+
 
 # Walkthrough 
 https://github.com/user-attachments/assets/4e34e370-2011-42d4-beb2-c8001f5522d8
